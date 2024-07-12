@@ -1,0 +1,57 @@
+@use 'reset';
+@use 'var';
+
+.shows{
+    position: relative;
+    min-height: 50vh;
+    background-image: url(../../dist/images/vought.jpeg);
+    background-size: cover;
+    margin-bottom: 56px;
+
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, #00050dfd  0%, rgba(0, 0, 0, 0) 100%), 
+                    linear-gradient(90deg, #00050d98 0%, rgba(0, 0, 0, 0) 100%),
+                    linear-gradient(0deg, #00050d98 0%, rgba(0, 0, 0, 0) 100%);
+        z-index: -1;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            max-width: 450px;
+        }
+
+        .flexs{
+            display: flex;
+            gap: 8px;
+            flex-direction: column;
+            justify-content: center;
+
+            h2{
+                font-size: 60px;
+                color: var.$corText;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+    
+            span{
+                margin-bottom: 16px;
+            }
+    
+            a{
+                max-width: 150px;
+                width: 100%;
+            }
+        }
+    }
+}

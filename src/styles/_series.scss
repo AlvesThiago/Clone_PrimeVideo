@@ -1,0 +1,30 @@
+@use 'reset';
+@use 'var';
+
+.vcu{
+    padding: 50px 44px;
+    &__content{
+        h2{
+            margin-bottom: 24px;
+        }
+        &__items{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 4px;
+
+            &__item{
+                display: flex;
+                flex-direction: column;
+
+                img{
+                    max-width: 250px;
+                    border-radius: 8px;
+                }
+
+                span{
+                    padding-top: 12px;
+                }
+            }
+        }
+    }
+}

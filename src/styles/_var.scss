@@ -1,0 +1,60 @@
+$corFundo: #00050D;
+$corText: #fff;
+$corTextSecundary: #AAA;
+$corTitle: #f2f4f6;
+$corFundoSecundary: #33373D;
+
+$mobile: 767px;
+$tablet: 1024px;
+$notebook: 1279px;
+
+.title--big{
+    font-size: 36px;
+    color: $corTitle;
+}
+
+.title{
+    font-size: 28px;
+    color: $corTitle;
+}
+
+.title--small{
+    font-size: 22px;
+    color: $corTitle;
+}
+
+.text{
+    font-size: 20px;
+    color: $corText;
+}
+
+.btnlist{
+    background-color: $corFundoSecundary;
+    padding: 2px 4px;    
+    border-radius: 4px;
+    color: $corTitle;
+}
+
+.btn{
+    background-color: $corText;
+    color: #00050D;
+    font-size: 20;
+    font-weight: bold;
+    padding: 8px 21px;
+    border-radius: 4px;
+}
+
+
+.container{
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container--head{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px 0px 10px 10px;
+}
+

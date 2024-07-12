@@ -1,0 +1,38 @@
+@use 'reset';
+@use 'var';
+
+.head{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var.$corFundo;
+    transition: background-color .5s ease;
+    z-index: 1000;
+
+    &__nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 8px;
+
+        h1{
+            img{
+                max-width: 120px;
+                width: 100%;
+            }
+        }
+
+        ul{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: var.$corText;
+            font-size: 16px;
+
+            a{
+                color: var.$corText;
+                font-size: 16px;
+                font-family: Ubuntu;
+            }
+        }
+    }
+}
